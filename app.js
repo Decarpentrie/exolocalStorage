@@ -26,6 +26,12 @@ $(document).ready(function() {
 	});
 	
 	recupere();
+$('#remove').click(function () {
+	
+	localStorage.removeItem("valeur");
+	
+	$("#texte").val(" ")
+})
 
 });
 
