@@ -23,15 +23,19 @@ $(document).ready(function() {
 
 	$("#action").click(function() {
 		sauvegarde();
+		
+		$("#text").val(" ");
 	});
 	
 	recupere();
-$('#remove').click(function () {
+
+
+	$('#remove').click(function () {
 	
-	localStorage.removeItem("valeur");
+		localStorage.removeItem("valeur");
 	
-	$("#texte").val(" ")
-})
+		$("#texte").val(" ");
+});
 
 });
 
